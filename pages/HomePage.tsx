@@ -61,7 +61,7 @@ const HomePage: React.FC = () => {
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
           <img
             className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full animate-gradient-move"
-            src="images/heroimg.png"
+            src="https://github.com/kirankumarwq/Ecommerce_website-/blob/a4033a9922a0d81b0b6561fd87286941abc857b2/images/heroimg.png"
             alt="Hero background with abstract gradient"
           />
         </div>
