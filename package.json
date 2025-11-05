@@ -1,6 +1,6 @@
 {
   "name": "shopverse",
-  "homepage": "https://kirankumarwq.github.io/E-commmerce_Website/",
+  "homepage": "https://kirankumarwq.github.io/Ecommerce_website-/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -8,7 +8,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist -r https://github.com/kirankumarwq/Ecommerce_website-.git"
   },
   "dependencies": {
     "react": "^19.2.0",
