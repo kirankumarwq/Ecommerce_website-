@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopVerse</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: {
+              DEFAULT: '#F97316', // Orange-500
+              '50': '#FFF7ED',
+              '100': '#FFEDD5',
+              '200': '#FED7AA',
+              '300': '#FDBA74',
+              '400': '#FB923C',
+              '500': '#F97316',
+              '600': '#EA580C',
+              '700': '#C2410C',
+              '800': '#9A3412',
+              '900': '#7C2D12',
+              '950': '#431407',
+            },
+            accent: {
+              DEFAULT: '#F59E0B', // Amber-500
+              '50': '#FFFBEB',
+              '100': '#FEF3C7',
+              '200': '#FDE68A',
+              '300': '#FCD34D',
+              '400': '#FBBF24',
+              '500': '#F59E0B',
+              '600': '#D97706',
+              '700': '#B45309',
+              '800': '#92400E',
+              '900': '#78350F',
+              '950': '#451A03',
+            },
+          },
+          animation: {
+            'fade-in-up': 'fade-in-up 0.5s ease-out',
+            'gradient-move': 'gradient-move 10s ease infinite',
+            'pulse-once': 'pulse-once 0.7s ease-out 1',
+            'bounce-once': 'bounce-once 0.7s ease-out 1',
+          },
+          keyframes: {
+            'fade-in-up': {
+              '0%': { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            'gradient-move': {
+              '0%, 100%': { 'background-position': '0% 50%' },
+              '50%': { 'background-position': '100% 50%' },
+            },
+            'pulse-once': {
+              '0%': { transform: 'scale(1)' },
+              '50%': { transform: 'scale(1.05)' },
+              '100%': { transform: 'scale(1)' },
+            },
+            'bounce-once': {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '25%': { transform: 'translateY(-8px)' },
+              '50%': { transform: 'translateY(0)' },
+              '75%': { transform: 'translateY(-4px)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+<style>
+/* Hide number input arrows */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+/* Custom styles for animations can be defined here if not using Tailwind's animation utility directly */
+</style>
+<script type="importmap">
+{
+  "imports": {
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.4",
+    "react-dom": "https://aistudiocdn.com/react-dom@^19.2.0",
+    "@splinetool/react-spline": "https://aistudiocdn.com/@splinetool/react-spline@^4.1.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+  <div id="root"></div>
+  <div id="modal-root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
