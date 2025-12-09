@@ -61,8 +61,8 @@ const HomePage: React.FC = () => {
         {/* Reinstated hero image div - MOVED TO APPEAR FIRST */}
         <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 hero-img-wrapper">
           <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full hero-kenburns"
-            src={heroImg}
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full animate-gradient-move"
+            src="heroimg.png" // Assuming heroimg.png is in the public folder or correctly handled
             alt="Hero background with abstract gradient"
             loading="eager"
             style={{ objectPosition: 'center right' }}
