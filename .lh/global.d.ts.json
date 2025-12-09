@@ -1,0 +1,18 @@
+{
+    "sourceFile": "global.d.ts",
+    "activeCommit": 0,
+    "commits": [
+        {
+            "activePatchIndex": 0,
+            "patches": [
+                {
+                    "date": 1765291017928,
+                    "content": "Index: \n===================================================================\n--- \n+++ \n"
+                }
+            ],
+            "date": 1765291017928,
+            "name": "Commit-0",
+            "content": "declare module '*.png' {\r\n  const value: string;\r\n  export default value;\r\n}\r\n\r\ndeclare module '*.jpg' {\r\n  const value: string;\r\n  export default value;\r\n}\r\n\r\ndeclare module '*.jpeg' {\r\n  const value: string;\r\n  export default value;\r\n}\r\n\r\ndeclare module '*.gif' {\r\n  const value: string;\r\n  export default value;\r\n}\r\n\r\ndeclare module '*.svg' {\r\n  const value: string;\r\n  export default value;\r\n}\r\n"
+        }
+    ]
+}

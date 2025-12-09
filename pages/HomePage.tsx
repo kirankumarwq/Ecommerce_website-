@@ -5,6 +5,7 @@ import ProductCard from '../components/ProductCard';
 import ProductCardSkeleton from '../components/ProductCardSkeleton';
 import Button from '../components/Button';
 import TestimonialCarousel from '../components/TestimonialCarousel';
+import heroImg from '../images/heroimg.png';
 import { Testimonial, Product } from '../types';
 import Modal from '../components/Modal';
 import QuickView from '../components/QuickView';
@@ -58,12 +59,15 @@ const HomePage: React.FC = () => {
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-white"> {/* Reverted to bg-white */}
         {/* Reinstated hero image div - MOVED TO APPEAR FIRST */}
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 hero-img-wrapper">
           <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full animate-gradient-move"
-            src="heroimg.png" // Assuming heroimg.png is in the public folder or correctly handled
+            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full hero-kenburns"
+            src={heroImg}
             alt="Hero background with abstract gradient"
+            loading="eager"
+            style={{ objectPosition: 'center right' }}
           />
+          <div className="hero-img-overlay hidden lg:block" aria-hidden="true" />
         </div>
         <div className="max-w-7xl mx-auto">
           <div className="relative z-10 pb-8 bg-white sm:pb-16 md:pb-20 lg:max-w-2xl lg:w-full lg:pb-28 xl:pb-32"> {/* Reverted to bg-white */}
