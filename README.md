@@ -94,3 +94,6 @@ This project focuses on clean UI, smooth interactions, and a fully responsive de
 └── vite.config.ts
 ```
 # 🖼️ Preview
+The website will run on `https://kirankumarwq.github.io/Ecommerce_website-/`.
+
+![preview](https://github.com/kirankumarwq/Ecommerce_website-/blob/main/Shopverse.png)
