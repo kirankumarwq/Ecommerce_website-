@@ -59,9 +59,9 @@ const HomePage: React.FC = () => {
       {/* Hero Section */}
       <div className="relative overflow-hidden bg-white"> {/* Reverted to bg-white */}
         {/* Reinstated hero image div - MOVED TO APPEAR FIRST */}
-        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2">
+        <div className="lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:top-0 bg-neutral-50">
           <img
-            className="h-56 w-full object-cover sm:h-72 md:h-96 lg:w-full lg:h-full animate-gradient-move"
+            className="w-full h-64 sm:h-80 md:h-96 object-contain lg:absolute lg:inset-0 lg:h-full lg:w-full animate-gradient-move"
             src={heroImg}
             alt="Hero background with abstract gradient"
           />
